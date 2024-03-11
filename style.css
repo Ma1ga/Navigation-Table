@@ -16,6 +16,116 @@ body {
     font-size: 14rem;
 }
 
+.wrapper .sub-menu {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+
+}
+
+.computer li:hover a+.sub-menu .second-sub {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5px);
+}
+
+.computer li:hover a+.sub-menu li:hover a+.second-sub {
+    display: block;
+}
+
+.sub-menu::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.second-sub::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    top: 0;
+}
+
+.computer li {
+    position: relative;
+}
+
+.computer li:hover a+.sub-menu {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+
+.wrapper .sub-menu a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.sub-menu li {
+
+    border-bottom: 1px solid #b9bdc1;
+    background-color: #d2d4d5;
+}
+
+.sub-menu li:hover {
+    background-color: #2a3644;
+}
+
+.sub-menu li:hover>a {
+    color: #fd8612;
+}
+
+.computer li:hover a+.sub-menu .second-sub .three-sub {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: calc(100% + 10px);
+}
+
+.computer li:hover a+.sub-menu li:hover a+.three-sub {
+    display: block;
+}
+
+.sub-menu::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.second-sub::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    top: 0;
+}
+
+.computer li {
+    position: relative;
+}
+
+.computer li:hover a+.sub-menu {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+
 .wrapper {
 
     margin: auto;
@@ -29,8 +139,12 @@ body {
     list-style: none;
 }
 
-.wrapper ul {
+.wrapper li {
     padding: 14px;
+}
+
+.wrapper ul {
+
     margin-bottom: 40px;
     background-color: #2a3644;
     border-radius: 3px;
@@ -45,6 +159,19 @@ body {
     font-family: "Arial";
 }
 
+h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-weight: bold;
+    font-family: "Arial";
+}
+table{
+    margin-bottom: 50px;
+}
+
 .wrapper h2 {
     font-size: 24rem;
     letter-spacing: 1px;
@@ -56,8 +183,6 @@ body {
 
 .wrapper a {
     text-decoration: none;
-    text-align: center;
-    border: 3px solid #2a3644;
     font-size: 16rem;
     color: #fff;
     font-weight: bold;
@@ -74,12 +199,11 @@ a {
     display: block;
 }
 
-.wrapper ul :hover {
-    background-color: #3f4852;
-}
+
 
 .wrapper li a:hover {
     color: #fd8612;
+
 }
 
 .wrapper .eat {
@@ -178,6 +302,16 @@ table thead tr {
 
 }
 
+table tr td:nth-child(1) {
+    text-align: center;
+}
+
+table tr td:nth-child(3),
+table tr td:nth-child(4),
+table tr td:nth-child(5) {
+    text-align: right;
+}
+
 tbody td {
     font-size: 16rem;
     color: #2a3644;
@@ -201,48 +335,54 @@ td {
     border: 1px solid #3f4852;
 }
 
-footer table {
-    margin-top: 96px;
-}
 
-.sub-menu::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: 0;
+.table {
+    display: table;
     width: 100%;
-    height: 5px;
 }
 
-.sub-menu {
-
-    border: 1px solid;
-    position: absolute;
-    left: 0;
-    top: calc(100% + 5px);
-    width: 211px;
+.table .name-tovar {
+    background-color: #2a3644 !important;
 }
 
-.sub-menu li:hover {
- background-color: #2a3644;
+.table .flex {
+    display: table-row;
+    text-align: left;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+
 }
 
-.sub-menu li {
+.table .flex:hover {
+    background-color: #c0c1c2;
 
-
-    background: #d2d4d5;
-    border: none;
-    border-bottom: 1px solid #b9bdc1;
 }
 
-.sub-menu li:first-child {
-    border-radius: 3px 0 0;
+.table .flex {
+    transition: 0.5s;
 }
 
-.navigation-ul>li:first-child {
-    border-radius: 3px 0 0 3px;
+
+
+.table .flex p {
+    border: 1px solid #3f4852;
+
+    display: table-cell;
+    padding: 18px;
+    font-size: 16px;
+    color: #2a3644;
+    font-family: "Arial";
 }
 
-.navigation-ul>li:last-child {
-    border-radius: 3px 0 0 3px;
+.table .name-tovar {
+    background-color: #2a3644;
+}
+
+.table .name-tovar p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
 }
