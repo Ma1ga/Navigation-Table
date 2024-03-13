@@ -55,13 +55,21 @@ body {
     min-width: 210px;
     display: none;
 }   
-
+.wrapper .milk {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}  
 .wrapper .sub-menu {
     z-index: 1;
     min-width: 210px;
     display: none;
 }
-
+.wrapper .formal {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
 .eat {
     position: relative;
 }
@@ -230,6 +238,59 @@ li:hover a+ .crab {
     color: #fd8612;
 }
 /* crab end */
+/* milk new */
+.milk::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.eat li:hover a+.milk {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .milk a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.milk::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+ .milk {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.milk li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.milk li:hover {
+    background-color: #2a3644;
+}
+
+.milk li:hover>a {
+    color: #fd8612;
+}
+/* milk end */
 /* sub-menu new */
 .sub-menu::before {
     content: "";
@@ -325,7 +386,60 @@ li:hover a+ .crab {
 .computer li:hover a+.sub-menu li:hover a+.third-sub {
     display: block;
 }
+/* third-sub end */
+/* formal new */
+.formal::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
 
+.city li:hover a+.formal {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .formal a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.formal::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+ .formal {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.formal li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.formal li:hover {
+    background-color: #2a3644;
+}
+
+.formal li:hover>a {
+    color: #fd8612;
+}
+/* formal end */
 .wrapper h1 {
     font-size: 24rem;
     letter-spacing: 1px;
