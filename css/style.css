@@ -39,46 +39,64 @@ body {
     background-color: #2a3644;
     border-radius: 3px;
 }
+.wrapper .social {
+    border-radius: 0 3px 3px 0;
+}
 
 .wrapper .sausage {
     z-index: 1;
     min-width: 210px;
     display: none;
 }
-.wrapper .salad{
+
+.wrapper .salad {
     z-index: 1;
     min-width: 210px;
     display: none;
 }
+
 .wrapper .crab {
     z-index: 1;
     min-width: 210px;
     display: none;
-}   
+}
+
 .wrapper .milk {
     z-index: 1;
     min-width: 210px;
     display: none;
-}  
+}
+
 .wrapper .sub-menu {
     z-index: 1;
     min-width: 210px;
     display: none;
 }
+
 .wrapper .formal {
     z-index: 1;
     min-width: 210px;
     display: none;
 }
+
+.wrapper .plank {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
 .eat {
     position: relative;
 }
+
 .computer li {
     position: relative;
 }
-.city{
+
+.city {
     position: relative;
 }
+
 /* sausage  */
 .sausage::before {
     content: "";
@@ -131,6 +149,7 @@ li:hover a+.sausage {
 .sausage li:hover>a {
     color: #fd8612;
 }
+
 /* sausage end */
 /* salad new */
 .salad::before {
@@ -165,7 +184,7 @@ li:hover a+.sausage {
     left: 0;
 }
 
-li:hover a+ .salad {
+li:hover a+.salad {
     position: absolute;
     display: block;
     top: calc(100% + 5px);
@@ -184,6 +203,7 @@ li:hover a+ .salad {
 .salad li:hover>a {
     color: #fd8612;
 }
+
 /* salad end */
 /* crab new */
 .crab::before {
@@ -218,7 +238,7 @@ li:hover a+ .salad {
     left: 0;
 }
 
-li:hover a+ .crab {
+li:hover a+.crab {
     position: absolute;
     display: block;
     top: calc(100% + 5px);
@@ -237,6 +257,7 @@ li:hover a+ .crab {
 .crab li:hover>a {
     color: #fd8612;
 }
+
 /* crab end */
 /* milk new */
 .milk::before {
@@ -271,7 +292,7 @@ li:hover a+ .crab {
     left: 0;
 }
 
-li:hover a+ .milk {
+li:hover a+.milk {
     position: absolute;
     display: block;
     top: calc(100% + 5px);
@@ -290,6 +311,7 @@ li:hover a+ .milk {
 .milk li:hover>a {
     color: #fd8612;
 }
+
 /* milk end */
 /* sub-menu new */
 .sub-menu::before {
@@ -343,6 +365,7 @@ li:hover a+ .milk {
 .sub-menu li:hover>a {
     color: #fd8612;
 }
+
 /* sub-menu end */
 /* second-menu new */
 .computer li:hover a+.sub-menu .second-sub {
@@ -373,6 +396,7 @@ li:hover a+ .milk {
     left: -5px;
     top: 0;
 }
+
 /* second-sub end */
 /* third-sub new */
 .computer .wrapper .second-sub .third-sub {
@@ -386,6 +410,7 @@ li:hover a+ .milk {
 .computer li:hover a+.sub-menu li:hover a+.third-sub {
     display: block;
 }
+
 /* third-sub end */
 /* formal new */
 .formal::before {
@@ -420,7 +445,7 @@ li:hover a+ .milk {
     left: 0;
 }
 
-li:hover a+ .formal {
+li:hover a+.formal {
     position: absolute;
     display: block;
     top: calc(100% + 5px);
@@ -439,7 +464,62 @@ li:hover a+ .formal {
 .formal li:hover>a {
     color: #fd8612;
 }
+
 /* formal end */
+/* plank-sub new */
+.plank::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.city li:hover a+.plank {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .plank a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.plank::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+.plank {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.plank li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.plank li:hover {
+    background-color: #2a3644;
+}
+
+.plank li:hover>a {
+    color: #fd8612;
+}
+
+/* plank-sub end */
 .wrapper h1 {
     font-size: 24rem;
     letter-spacing: 1px;
@@ -496,17 +576,22 @@ a {
     color: #fd8612;
 
 }
-
+.city-company {
+    justify-content: space-between;
+}
 .wrapper .eat {
     justify-content: space-between;
 }
 
-.wrapper .computer {
+.wrapper .computer{
     justify-content: space-between;
 }
 
-.wrapper .city {
-    justify-content: space-between;
+.wrapper .city>li, 
+.wrapper .computer>li,
+.wrapper .eat>li {
+    padding: 10px 28px;
+    border: 1px solid #3f4852;
 }
 
 .social {
@@ -521,14 +606,14 @@ a {
 .social a {
 
     display: block;
-    background: url(img/img\ social3.png);
+    background: url(img/social.png);
 }
 
 a.fb {
     width: 15px;
     height: 18px;
     transition: 0.3s;
-    background-position: -1px -2px;
+    background-position: 0px 0px;
 }
 
 a.fb:hover {
@@ -543,7 +628,7 @@ a.tw {
     width: 16px;
     height: 18px;
     transition: 0.3s;
-    background-position: -19px 0px;
+    background-position: -12px 3px;
 }
 
 a.tw:hover {
@@ -632,27 +717,26 @@ td {
     background-color: #2a3644 !important;
 }
 
-.table .flex {
+.table .row {
     display: table-row;
     text-align: left;
     border-radius: 3px;
     background-color: #f2f2f2;
-    justify-content: space-between;
 
 }
 
-.table .flex:hover {
+.table .row:hover {
     background-color: #c0c1c2;
 
 }
 
-.table .flex {
+.table .row {
     transition: 0.5s;
 }
 
 
 
-.table .flex p {
+.table .row p {
     border: 1px solid #3f4852;
 
     display: table-cell;
