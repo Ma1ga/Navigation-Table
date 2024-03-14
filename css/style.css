@@ -1,0 +1,759 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1px;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-size: 14rem;
+}
+
+.wrapper {
+
+    margin: auto;
+    max-width: 960px;
+
+}
+
+.wrapper ul {
+
+    display: flex;
+    list-style: none;
+}
+
+.wrapper li {
+    padding: 14px;
+}
+
+.wrapper ul {
+
+    margin-bottom: 40px;
+    background-color: #2a3644;
+    border-radius: 3px;
+}
+.wrapper .social {
+    border-radius: 0 3px 3px 0;
+}
+
+.wrapper .sausage {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
+.wrapper .salad {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
+.wrapper .crab {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
+.wrapper .milk {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
+.wrapper .sub-menu {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
+.wrapper .formal {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
+.wrapper .plank {
+    z-index: 1;
+    min-width: 210px;
+    display: none;
+}
+
+.eat {
+    position: relative;
+}
+
+.computer li {
+    position: relative;
+}
+
+.city {
+    position: relative;
+}
+
+/* sausage  */
+.sausage::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.eat li:hover a+.sausage {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .sausage a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.sausage::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+.sausage {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.sausage li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.sausage li:hover {
+    background-color: #2a3644;
+}
+
+.sausage li:hover>a {
+    color: #fd8612;
+}
+
+/* sausage end */
+/* salad new */
+.salad::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.eat li:hover a+.salad {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .salad a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.salad::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+.salad {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.salad li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.salad li:hover {
+    background-color: #2a3644;
+}
+
+.salad li:hover>a {
+    color: #fd8612;
+}
+
+/* salad end */
+/* crab new */
+.crab::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.eat li:hover a+.crab {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .crab a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.crab::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+.crab {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.crab li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.crab li:hover {
+    background-color: #2a3644;
+}
+
+.crab li:hover>a {
+    color: #fd8612;
+}
+
+/* crab end */
+/* milk new */
+.milk::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.eat li:hover a+.milk {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .milk a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.milk::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+.milk {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.milk li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.milk li:hover {
+    background-color: #2a3644;
+}
+
+.milk li:hover>a {
+    color: #fd8612;
+}
+
+/* milk end */
+/* sub-menu new */
+.sub-menu::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.computer li:hover a+.sub-menu {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .sub-menu a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.sub-menu::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+.computer li:hover a+.sub-menu {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.sub-menu li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.sub-menu li:hover {
+    background-color: #2a3644;
+}
+
+.sub-menu li:hover>a {
+    color: #fd8612;
+}
+
+/* sub-menu end */
+/* second-menu new */
+.computer li:hover a+.sub-menu .second-sub {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: calc(100% + 5px);
+}
+
+.computer li:hover a+.sub-menu li:hover a+.second-sub {
+    display: block;
+}
+
+.second-sub::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: -5px;
+    top: 0;
+}
+
+.second-sub::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: -5px;
+    top: 0;
+}
+
+/* second-sub end */
+/* third-sub new */
+.computer .wrapper .second-sub .third-sub {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: unset;
+    right: calc(100% + 10px);
+}
+
+.computer li:hover a+.sub-menu li:hover a+.third-sub {
+    display: block;
+}
+
+/* third-sub end */
+/* formal new */
+.formal::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.city li:hover a+.formal {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .formal a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.formal::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+.formal {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.formal li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.formal li:hover {
+    background-color: #2a3644;
+}
+
+.formal li:hover>a {
+    color: #fd8612;
+}
+
+/* formal end */
+/* plank-sub new */
+.plank::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.city li:hover a+.plank {
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.wrapper .plank a {
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.plank::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+}
+
+li:hover a+.plank {
+    position: absolute;
+    display: block;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.plank li {
+    background-color: #d2d4d5;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.plank li:hover {
+    background-color: #2a3644;
+}
+
+.plank li:hover>a {
+    color: #fd8612;
+}
+
+/* plank-sub end */
+.wrapper h1 {
+    font-size: 24rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+table {
+    margin-bottom: 50px;
+}
+
+.wrapper h2 {
+    font-size: 24rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 16rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial";
+
+}
+
+.wrapper li a {
+    transition: 0.5s;
+}
+
+
+a {
+    display: block;
+}
+
+
+
+.wrapper li a:hover {
+    color: #fd8612;
+
+}
+.city-company {
+    justify-content: space-between;
+}
+.wrapper .eat {
+    justify-content: space-between;
+}
+
+.wrapper .computer{
+    justify-content: space-between;
+}
+
+.wrapper .city>li, 
+.wrapper .computer>li,
+.wrapper .eat>li {
+    padding: 10px 28px;
+    border: 1px solid #3f4852;
+}
+
+.social {
+    gap: 27px;
+}
+
+.wrapper li a {
+    display: inline-block;
+
+}
+
+.social a {
+
+    display: block;
+    background: url(img/social.png);
+}
+
+a.fb {
+    width: 15px;
+    height: 18px;
+    transition: 0.3s;
+    background-position: 0px 0px;
+}
+
+a.fb:hover {
+    background-position: 0px -23px;
+}
+
+li {
+    position: relative;
+}
+
+a.tw {
+    width: 16px;
+    height: 18px;
+    transition: 0.3s;
+    background-position: -12px 3px;
+}
+
+a.tw:hover {
+    background-position: -19px -20px;
+}
+
+a.in {
+    width: 21px;
+    height: 22px;
+    transition: 0.3s;
+    background-position: -44px 0;
+}
+
+a.in:hover {
+    background-position: -44px -23px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+table thead tr td {
+
+    padding: 13px;
+    border: 1px solid #3f4852;
+}
+
+table thead .name {
+    text-align: left;
+}
+
+table thead td {
+    font-size: 16rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial";
+    max-width: 960px;
+    border: 3px solid #2a3644;
+}
+
+table thead tr {
+    background-color: #2a3644;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+table tr td:nth-child(1) {
+    text-align: center;
+}
+
+
+
+tbody td {
+    font-size: 16rem;
+    color: #2a3644;
+    font-family: "Arial";
+    padding: 13px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #c0c1c2;
+}
+
+tbody tr {
+    transition: 0.5s;
+}
+
+td {
+    border: 1px solid #3f4852;
+}
+
+
+.table {
+    display: table;
+    width: 100%;
+}
+
+.table .name-tovar {
+    background-color: #2a3644 !important;
+}
+
+.table .row {
+    display: table-row;
+    text-align: left;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+
+}
+
+.table .row:hover {
+    background-color: #c0c1c2;
+
+}
+
+.table .row {
+    transition: 0.5s;
+}
+
+
+
+.table .row p {
+    border: 1px solid #3f4852;
+
+    display: table-cell;
+    padding: 18px;
+    font-size: 16px;
+    color: #2a3644;
+    font-family: "Arial";
+}
+
+.table .name-tovar {
+    background-color: #2a3644;
+}
+
+.table .name-tovar p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+}
