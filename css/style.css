@@ -35,12 +35,15 @@ body {
 .wrapper li {
     padding: 14px;
 }
+
 h1 {
     margin: 13px 25px;
 }
+
 .wrapper .eat {
     margin-bottom: 25px;
 }
+
 .wrapper .city-company {
     margin-bottom: 60px;
     background-color: #2a3644;
@@ -99,6 +102,7 @@ h1 {
 .city {
     position: relative;
 }
+
 /* sub-menu new */
 .sub-menu::before {
     content: "";
@@ -109,7 +113,7 @@ h1 {
     left: 0;
 }
 
- li:hover a+.sub-menu {
+li:hover>a+.sub-menu {
     display: block;
     position: absolute;
     top: calc(100% + 5px);
@@ -182,12 +186,14 @@ li:hover a+.sub-menu {
     left: -5px;
     top: 0;
 }
+
 .second-sub .computer {
     flex-grow: 1;
 }
+
 /* second-sub end */
 /* third-sub new */
-.computer .wrapper .second-sub .third-sub {
+body .wrapper .computer .sub-menu .second-sub .third-sub {
     position: absolute;
     display: none;
     top: 0;
@@ -200,16 +206,19 @@ li:hover a+.sub-menu {
 }
 
 /* third-sub end */
-.poslogi li{
-    width: 210px;   
-   }
-    li:hover .sub-menu.poslogi{
-       max-height: 170px;
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-       width: max-content;
-   }
+.poslogi li {
+    width: 210px;
+}
+
+li:hover .sub-menu.poslogi {
+    background-color: #d2d4d5;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: max-content;
+}
+
 .wrapper h1 {
     font-size: 24rem;
     letter-spacing: 1px;
@@ -302,14 +311,15 @@ a {
 }
 
 a.fb {
-    width: 15px;
+    width: 9px;
     height: 18px;
     transition: 0.3s;
+    background-image: url(../social.png);
     background-position: 0px 0px;
 }
 
 a.fb:hover {
-    background-position: 0px -23px;
+    background-position: 0px -21px;
 }
 
 li {
@@ -320,22 +330,47 @@ a.tw {
     width: 16px;
     height: 18px;
     transition: 0.3s;
-    background-position: -12px 3px;
+    background-image: url(../social.png);
+    background-position: -12px 0px;
 }
 
 a.tw:hover {
-    background-position: -19px -20px;
+    background-position: -12px -23px;
 }
 
 a.in {
-    width: 21px;
+    width: 18px;
     height: 22px;
     transition: 0.3s;
-    background-position: -44px 0;
+    background-image: url(../social.png);
+    background-position: -31px 2px;
 }
 
 a.in:hover {
-    background-position: -44px -23px;
+    background-position: -31px -18px;
+}
+
+.logo {
+    padding-left: 29px;
+    position: relative;
+}
+
+.logo:before {
+    content: "";
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+
+    width: 16px;
+    height: 13px;
+    transition: 0.3s;
+    background-image: url(../social.png);
+    background-position: -51px -4px;
+}
+
+.logo:hover:before {
+    background-position: -51px -24px;
 }
 
 table {
@@ -343,13 +378,16 @@ table {
     width: 100%;
 
 }
-td:first-child{
+
+td:first-child {
     border-left: none;
 }
-td:last-child{
+
+td:last-child {
     border-right: none;
 }
- tr:last-child td{
+
+tr:last-child td {
     border-bottom: none;
 }
 
@@ -450,6 +488,18 @@ td {
 
 .table .name-tovar {
     background-color: #2a3644;
+}
+
+.row p:first-child {
+    border-left: none;
+}
+
+.row p:last-child {
+    border-right: none;
+}
+
+.row p:last-child td {
+    border-bottom: none;
 }
 
 .table .name-tovar p {
