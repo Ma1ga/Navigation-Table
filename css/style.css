@@ -201,7 +201,7 @@ body .wrapper .computer .sub-menu .second-sub .third-sub {
     right: calc(100% + 10px);
 }
 
-.computer li:hover a+.sub-menu li:hover a+.second-sub li:hover third-sub {
+.computer li:hover a+.sub-menu li:hover a+.second-sub li:hover .third-sub {
     display: block;
 }
 
