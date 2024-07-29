@@ -451,6 +451,7 @@ td {
 .table {
     display: table;
     width: 100%;
+    margin-bottom: 97px;
 }
 
 .table .name-tovar {
@@ -508,4 +509,7 @@ td {
     font-weight: bold;
     font-family: "Arial";
     text-align: center;
+}
+.right {
+    text-align: right;
 }
