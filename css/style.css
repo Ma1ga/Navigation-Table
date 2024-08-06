@@ -343,7 +343,7 @@ a.in {
     height: 22px;
     transition: 0.3s;
     background-image: url(../social.png);
-    background-position: -31px 2px;
+    background-position: -31px 1px;
 }
 
 a.in:hover {
