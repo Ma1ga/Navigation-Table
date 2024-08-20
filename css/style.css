@@ -84,9 +84,11 @@ h1 {
 }
 
 .wrapper .sub-menu {
+    border: 1px solid #d2d4d5;
     z-index: 1;
     min-width: 210px;
     display: none;
+    border-radius: 7px;
 }
 
 
@@ -462,7 +464,7 @@ td {
     display: table-row;
     text-align: left;
     border-radius: 3px;
-    background-color: #f2f2f2;
+    
 
 }
 
@@ -481,7 +483,7 @@ td {
     border: 1px solid #3f4852;
 
     display: table-cell;
-    padding: 18px;
+    padding: 14px;
     font-size: 16px;
     color: #2a3644;
     font-family: "Arial";
@@ -512,4 +514,13 @@ td {
 }
 .right {
     text-align: right;
+}
+.number-width{
+    width: 12%;
+}
+.width{
+    width: 39%;
+}
+.table .row:nth-child(odd) {
+    background-color: #f2f2f2;
 }
