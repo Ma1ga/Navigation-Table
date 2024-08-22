@@ -45,6 +45,7 @@ h1 {
 }
 
 .wrapper .city-company {
+    border-radius: 6px;
     margin-bottom: 60px;
     background-color: #2a3644;
 }
@@ -293,6 +294,7 @@ a {
 .wrapper .city>li,
 .wrapper .computer>li,
 .wrapper .eat>li {
+    border-radius: 6px;
     padding: 16px 28px;
     border: 1px solid #3f4852;
 }
