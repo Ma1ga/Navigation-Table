@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-    margin: 13px 25px;
+    margin: 13px 0px;
 }
 
 .wrapper .eat {
@@ -448,7 +448,11 @@ tbody td {
     padding: 13px;
 }
 
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(2n-1) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(2n) {
     background-color: #e8e8e8;
 }
 
@@ -459,9 +463,11 @@ tbody tr:hover {
 tbody tr {
     transition: 0.5s;
 }
-.hover:hover{
+ul >li:hover {
     background-color: #3f4852;
-    color: #fd8612;
+}
+ul li:hover >a {
+    color: #ff8505;
 }
 td {
     border: 1px solid #3f4852;
@@ -542,6 +548,15 @@ td {
 .width{
     width: 39%;
 }
-.table .row:nth-child(odd) {
+.table .row:nth-child(2n) {
     background-color: #e8e8e8;
 }
+
+.table .row:nth-child(2n-1) {
+    background-color: #f2f2f2;
+    
+}
+.table .row:hover {
+    background-color: #c0c1c2;
+}
+
