@@ -175,7 +175,7 @@ li:hover a+.sub-menu {
 .second-sub::before {
     content: "";
     position: absolute;
-    width: 5px;
+    width: 9px;
     height: 100%;
     left: -5px;
     top: 0;
@@ -242,6 +242,8 @@ h2 {
 }
 
 table {
+    overflow: hidden;
+    border-radius: 3px;
     margin-bottom: 50px;
 }
 
@@ -453,6 +455,8 @@ td {
 
 
 .table {
+    overflow: hidden;
+    border-radius: 3px;
     display: table;
     width: 100%;
     margin-bottom: 97px;
@@ -483,7 +487,7 @@ td {
 
 .table .row p {
     border: 1px solid #3f4852;
-
+    text-align: left;
     display: table-cell;
     padding: 14px;
     font-size: 16px;
@@ -496,6 +500,7 @@ td {
 }
 
 .row p:first-child {
+    text-align: center;
     border-left: none;
 }
 
