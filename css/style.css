@@ -22,7 +22,9 @@ body {
     max-width: 960px;
 
 }
-
+.right{
+    text-align: right;
+}
 .wrapper ul {
 
     margin-bottom: 40px;
@@ -133,8 +135,8 @@ li:hover>a+.sub-menu {
     content: "";
     position: absolute;
     width: 100%;
-    height: 5px;
-    top: -5px;
+    height: 8px;
+    top: -6px;
     left: 0;
 }
 
@@ -310,7 +312,8 @@ a {
     border-radius: 0px;
 }
 .social {
-    gap: 27px;
+    gap: 15px;
+    width: 18%;
 }
 
 .wrapper li a {
@@ -498,7 +501,6 @@ td {
 
 .table .row p {
     border: 1px solid #3f4852;
-    text-align: left;
     display: table-cell;
     padding: 14px;
     font-size: 16px;
