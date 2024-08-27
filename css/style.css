@@ -207,7 +207,14 @@ body .wrapper .computer .sub-menu .second-sub .third-sub {
 .computer li:hover a+.sub-menu li:hover a+.second-sub li:hover .third-sub {
     display: block;
 }
-
+.third-sub::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    left: 208px;
+    top: 0;
+}
 /* third-sub end */
 .poslogi li {
     width: 210px;
