@@ -57,7 +57,12 @@ h1 {
     margin: 0;
 
 }
-
+.social {
+    justify-content: space-evenly;
+}
+.social li {
+    padding: 0px;
+}
 .wrapper .social {
     border-radius: 0 3px 3px 0;
 }
@@ -87,7 +92,7 @@ h1 {
 }
 
 .wrapper .sub-menu {
-    border: 1px solid #d2d4d5;
+    /* border: 1px solid #d2d4d5; */
     z-index: 1;
     min-width: 210px;
     display: none;
@@ -148,6 +153,7 @@ li:hover a+.sub-menu {
 }
 
 .sub-menu li {
+    border-radius: 2px;
     background-color: #d2d4d5;
     border-bottom: 1px solid #b9bdc1;
 }
@@ -311,7 +317,7 @@ a {
 .wrapper header .border {
     border-bottom: none !important;
     border: 1px solid #3f4852;
-    border-radius: 0px;
+    border-radius: 6px;
     border-top: none;
 }
 .borders {
@@ -490,6 +496,9 @@ td {
     display: table;
     width: 100%;
     margin-bottom: 97px;
+}
+footer .table .name-tovar p {
+    border: 0.5px solid #3f4852;
 }
 
 .table .name-tovar {
