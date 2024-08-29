@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-    margin: 13px 0px;
+    margin: 35px 0px 25px;
 }
 
 .wrapper .eat {
@@ -218,6 +218,7 @@ body .wrapper .computer .sub-menu .second-sub .third-sub {
 }
 /* third-sub end */
 .poslogi li {
+    border-right: 1px #b9bdc1 solid;
     width: 210px;
 }
 
@@ -308,8 +309,16 @@ a {
     padding: 16px 28px;
 }
 .wrapper header .border {
+    border-bottom: none !important;
     border: 1px solid #3f4852;
     border-radius: 0px;
+    border-top: none;
+}
+.borders {
+    border-bottom: none !important;
+}
+.none {
+    border-bottom: none !important;
 }
 .social {
     gap: 15px;
@@ -470,7 +479,8 @@ ul li:hover >a {
     color: #ff8505;
 }
 td {
-    border: 1px solid #3f4852;
+    border-color: #c0c1c2;
+    border: 1px solid #c0c1c2;
 }
 
 
@@ -506,12 +516,15 @@ td {
 
 
 .table .row p {
-    border: 1px solid #3f4852;
+    border: 0.5px solid #c0c1c2;
     display: table-cell;
     padding: 14px;
     font-size: 16px;
     color: #2a3644;
     font-family: "Arial";
+}
+.table .row:last-child p {
+    border-bottom: none;
 }
 
 .table .name-tovar {
